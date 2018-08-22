@@ -1,22 +1,20 @@
 document.addEventListener('DOMContentLoaded',()=>{
     let can = document.getElementsByTagName('canvas');
 
-    can[0].width = window.innerWidth;
+	can[0].width = window.innerWidth;
+	can[0].height = window.innerHeight;
 // //    let mp3Player = document.getElementById('mp3_player');
 //    mp3Player[0].width = window.innerWidth;
 
 // Create a new instance of an audio object and adjust some of its properties
-var audio = new Audio();
-audio.src = 'assets/test.mp3';
-audio.controls = true;
-audio.loop = true;
-audio.autoplay = false;
+let audio = document.getElementById('audio_box');
+
 // Establish all variables that your Analyser will use
 var canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_y, bar_width, bar_height;
 // Initialize the MP3 player after the page loads all of its HTML into the window
 window.addEventListener("load", initMp3Player, false);
 function initMp3Player(){
-	document.getElementById('audio_box').appendChild(audio);
+	
 	context = new AudioContext(); // AudioContext object instance
 	analyser = context.createAnalyser(); // AnalyserNode method
 	canvas = document.getElementById('analyser_render');
@@ -52,4 +50,4 @@ function frameLooper(){
 	}
 }
 
-})
+}) 
