@@ -1,0 +1,113 @@
+html, body {
+    height:100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background:rgba(255,255,255,0.5);
+}
+
+.message {
+    font-family: 'Love Ya Like A Sister', cursive;
+    position: absolute;
+    z-index: 1;
+}
+
+.song {
+    width: 100px;
+    height: 100px;
+    border: lightblue dotted;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    box-shadow: 4px -4px rgba(133, 131, 131, 0.6);
+   -moz-box-shadow: 4px -4px rgba(133, 131, 131, 0.6);
+   -webkit-box-shadow: 4px -4px rgba(133, 131, 131, 0.6); 
+   -o-box-shadow: 4px -4px rgba(133, 131, 131, 0.6);   
+    
+}
+
+.song1 {
+    background-color: rgb(117, 238, 238);
+    float: left
+}
+
+.song2 {
+    background-color: rgba(96, 201, 201, 0.76);
+    float: left
+}
+
+.song3 {
+    background-color: rgba(81, 170, 170, 0.603);
+    float: left
+}
+
+.song4 {
+    background-color: rgba(79, 163, 163, 0.247);
+    float: left
+}
+
+.song5 {
+    background-color: rgba(55, 116, 116, 0.116);
+    float: left
+}
+
+.song6 {
+    background-color: rgb(107, 221, 221);
+    float: left
+}
+
+.song7 {
+    background-color: rgb(107, 221, 221);
+    float: left
+}
+
+.song8 {
+    background-color: rgb(107, 221, 221);
+    float: left
+}
+
+.song9 {
+    background-color: rgb(107, 221, 221);
+    float: left
+}
+
+.song10 {
+    background-color: rgb(107, 221, 221);
+    float: left
+}
+
+#playSong {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px; 
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+}
+
+#playGame {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px; 
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+}
+
+
+
+
