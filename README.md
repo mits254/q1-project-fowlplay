@@ -14,7 +14,7 @@ To play this game click on the link below and follow the instructions.
 
 <!-- <video width = "400" height = "300" controls > <source src="assets/FowlPlay Clip.mp4" type="video/mp4">
 </video> -->
-![](assets/FowlPlay Clip.mp4)
+![](FowlPlay Clip.mp4)
 
 ### BEST FEATURE
 
