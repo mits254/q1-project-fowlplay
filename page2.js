@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let X = window.innerWidth;
 	let Y = window.innerHeight;
-
+    console.log(X,Y);
 	let windowX = Math.ceil(X / 1.5);
 	let windowY = Math.ceil(Y / 1.5) - 30;
 	let gm = document.getElementById('analyser_render');
@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	gm.height = Y / 3 - 20;
 	let totalScore = 0;
 	let screen_velocity = 100;
-
+	
 	let mainState = {
 		preload: function () {
 			// This function will be executed at the beginning     
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		update: function () {
 			// This function is called 60 times per second    
 			// It contains the game's logic
-			if (this.bird.y < 0)
+			if (this.bird.y < 0 || this.bird.y > windowY)
 				this.restartGame();
 			game.physics.arcade.overlap(
 				this.bird, this.food, this.eatFood, null, this);
@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Create a new instance of an audio object and adjust some of its properties
 	let audio = document.getElementById('audio_box');
 	audio.src = window.location.search.split("=")[1];
+	// audio.width = windowX;
 	// Establish all variables that your Analyser will use
 	let canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_y, bar_width, bar_height;
 	// Initialize the MP3 player after the page loads all of its HTML into the window
