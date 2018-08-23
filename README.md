@@ -10,7 +10,7 @@ To play this game click on the link below and follow the instructions.
 
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
-<img src="assets/FowlPlay Clip.mp4" />
+<video src="assets/FowlPlay Clip.mp4" ></video>
 
 
 ### BEST FEATURE
