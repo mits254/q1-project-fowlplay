@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         targets: 'h1',
         translateY: '5rem',
         translateX: '50rem',
-        opacity: 50,
-        loop: 1,
         fontSize: 75,
         delay: 100,
         duration: 1000
@@ -23,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
         targets: 'h2',
         translateY: '7rem',
         translateX: '22rem',
-        opacity: 50,
-        loop: 1,
         fontSize: 50,
         delay: 100,
         duration: 1000
@@ -38,5 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 1100,
         duration: 1000,
     })
+
+    
 
 })

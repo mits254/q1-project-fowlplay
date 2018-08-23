@@ -1,31 +1,34 @@
 document.addEventListener('DOMContentLoaded', (ev) => {
 
-
 let selected;
-
 let basicTimeline = anime.timeline();
-
 basicTimeline
-  .add({
-    targets: '#flappybird',
-    translateY: [0, 500],
-    translateX: [0, 100],
-    loop: false,
-    duration: 2000,
-    rotate: '1turn',
-    easing: 'easeInOutQuad',
-  })
-  .add({
-    targets: '#flappybird2',
-    translateX: [-5, 400],
-    translateY: 40,
-    opacity: [0, 100],
-    scale: 1.5,
-    loop: false,
-    duration: 3000,
-    easing: 'easeInOutQuad',
-  });
-  
+ .add({
+   targets: '#flappybird',
+   translateY: [0, 500],
+   translateX: [0, 100],
+   loop: false,
+   duration: 2000,
+   rotate: '1turn',
+   easing: 'easeInOutQuad',
+ })
+ .add({
+   targets: '#flappybird2',
+   translateX: [-5, 400],
+   translateY: 40,
+   opacity: [0, 100],
+   scale: 1.5,
+   loop: false,
+   duration: 3000,
+   easing: 'easeInOutQuad',
+ });
+
+function removeChooseSong () {
+    anime ({
+        targets: '.chooseSong',
+        opacity: 0,
+    })
+};
 
 let song1 = document.getElementsByClassName('song1')[0];
 song1.innerText = 'Wrecking Ball';
@@ -44,7 +47,6 @@ song1.addEventListener('click', (ev) => {
         opacity: 0,
     })
 })
-
 let song2 = document.getElementsByClassName('song2')[0];
 song2.innerText = 'She Wolf';
 song2.addEventListener('click', (ev) => {
@@ -59,9 +61,8 @@ song2.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
-
 let song3 = document.getElementsByClassName('song3')[0];
 song3.innerText = 'The Monster';
 song3.addEventListener('click', (ev) => {
@@ -76,9 +77,8 @@ song3.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
-
 let song4 = document.getElementsByClassName('song4')[0];
 song4.innerText = 'Lean On';
 song4.addEventListener('click', (ev) => {
@@ -93,7 +93,7 @@ song4.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song5 = document.getElementsByClassName('song5')[0];
@@ -110,7 +110,7 @@ song5.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song6 = document.getElementsByClassName('song6')[0];
@@ -127,7 +127,7 @@ song6.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song7 = document.getElementsByClassName('song7')[0];
@@ -144,7 +144,7 @@ song7.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song8 = document.getElementsByClassName('song8')[0];
@@ -161,7 +161,7 @@ song8.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song9 = document.getElementsByClassName('song9')[0];
@@ -178,7 +178,7 @@ song9.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
 let song10 = document.getElementsByClassName('song10')[0];
@@ -195,7 +195,7 @@ song10.addEventListener('click', (ev) => {
     anime ({
         targets: '.chooseSong',
         opacity: 0,
-    })  
+    })
 })
 
     let animateTitle = anime({
@@ -215,10 +215,9 @@ song10.addEventListener('click', (ev) => {
         translateX: '37rem',
         scale: [1, 3],
         opacity: [0, .8],
-        delay: 500,
+        delay: 100,
         duration: 1000
     })
-
     let animateSong1 = anime ({
         targets: '.song1',
         translateX: '15rem',
@@ -231,7 +230,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong2 = anime ({
         targets: '.song2',
         translateX: '20rem',
@@ -244,7 +242,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong3 = anime ({
         targets: '.song3',
         translateX: '25rem',
@@ -257,7 +254,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong4 = anime ({
         targets: '.song4',
         translateX: '30rem',
@@ -270,7 +266,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong5 = anime ({
         targets: '.song5',
         translateX: '33rem',
@@ -283,7 +278,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong6 = anime ({
         targets: '.song6',
         translateX: '25rem',
@@ -296,7 +290,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong7 = anime ({
         targets: '.song7',
         translateX: '9rem',
@@ -309,7 +302,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong8 = anime ({
         targets: '.song8',
         translateX: '-10rem',
@@ -322,7 +314,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong9 = anime ({
         targets: '.song9',
         translateX: '-28rem',
@@ -335,7 +326,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong10 = anime ({
         targets: '.song10',
         translateX: '-45rem',
@@ -348,7 +338,6 @@ song10.addEventListener('click', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateInstructions = anime ({
         targets: '#instructions',
         translateY : '10rem',
@@ -357,7 +346,6 @@ song10.addEventListener('click', (ev) => {
         delay: 1100,
         duration: 1000,
     })
-
     let animatePlaySong = anime ({
         targets: '#playSong',
         translateY : '25rem',
@@ -366,7 +354,6 @@ song10.addEventListener('click', (ev) => {
         delay: 1100,
         duration: 1000,
     })
-
     let animatePlayGame = anime ({
         targets: '#playGame',
         translateY : '30rem',
@@ -374,28 +361,22 @@ song10.addEventListener('click', (ev) => {
         opacity: [0, .9],
         delay: 1100,
         duration: 1000,
-
     })
-
     let instructions = document.getElementById('instructions');
     instructions.addEventListener('click', (ev) => {
         instructions.innerText = '';
         let instructionList = document.createElement('ul');
         instructionList.innerText = 'INSTRUCTIONS:'
         instructions.appendChild(instructionList);
-
         let liOne = document.createElement('li');
         instructionList.appendChild(liOne);
         liOne.innerText = "Use the spacebar to fly."
-
         let liTwo = document.createElement('li');
         instructionList.appendChild(liTwo);
         liTwo.innerText = "Collect the pink bugs for your babies."
-
         let liThree = document.createElement('li');
         instructionList.appendChild(liThree);
         liThree.innerText = "Be aware of the poisonous yellow bugs - they will kill you."
-
         anime ({
             targets: '.chooseSong',
             opacity: 0,
@@ -416,16 +397,15 @@ song10.addEventListener('click', (ev) => {
         })
         
     })
-
     let playSong = document.getElementById('playSong');
     playSong.addEventListener('click', (ev) => {
         window.open(`page3.html?song=${selected}`);
     })
-
     let playGame = document.getElementById('playGame');
     playGame.addEventListener('click', (ev) => {
         window.open(`page2.html?song=${selected}`);
     })
-
 })
+
+
 

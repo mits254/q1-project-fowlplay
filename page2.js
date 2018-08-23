@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    
     let X = window.innerWidth;
     let Y = window.innerHeight;
     let windowX = Math.ceil(X / 1.5);
@@ -8,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gm.height = Y / 3 - 20;
     let totalScore = 0;
     let screen_velocity = 100;
+
     let mainState = {
         preload: function () {
             // This function will be executed at the beginning     
@@ -16,26 +18,31 @@ document.addEventListener('DOMContentLoaded', () => {
             game.load.image('goodbug', 'assets/good_bug.png');
             game.load.image('badbug', 'assets/badbug.png');
         },
+
         create: function () {
             // This function is called after the preload function     
             // Here we set up the game, display sprites, etc.  
             // Change the background color of the game to blue
             game.stage.backgroundColor = '#002D3C';
+
             // Set the physics system
             game.physics.startSystem(Phaser.Physics.ARCADE);
+
             // Display the bird at the position x=100 and y=245
             this.bird = game.add.sprite(10, windowY / 2, 'bird');
             this.bird.scale.setTo(0.1, 0.1);
-            // let fly = this.bird.animations.add('fly');
-            // this.bird.animations.play('fly', 3 ,true);
+
             // Add physics to the bird
             // Needed for: movements, gravity, collisions, etc.
             game.physics.arcade.enable(this.bird);
+
             // Add gravity to the bird to make it fall
             this.bird.body.gravity.y = windowY / 2;
+
             // add the pipes group
             this.pipes = game.add.group();
             this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
+            
             // add food to the game
             this.food = game.add.group();
             this.timer = game.time.events.loop(1000, this.addfood, this);
