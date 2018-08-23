@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	let windowX = Math.ceil(X / 1.5);
 	let windowY = Math.ceil(Y / 1.5) - 30;
 	let gm = document.getElementById('analyser_render');
-	console.log(gm);
 	gm.width = X / 1.5;
 	gm.height = Y / 3 - 20;
-	console.log(gm.width, gm.height);
+	let totalScore = 0;
+	let screen_velocity = 100;
 
 	let mainState = {
 		preload: function () {
@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			game.load.image('bird', 'assets/new_bird1.png');
 			game.load.image('goodbug', 'assets/good_bug.png');
 			game.load.image('badbug', 'assets/badbug.png');
-			//game.load.image('fud', 'assets/diamond.png');
 		},
 
 		create: function () {
@@ -33,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 			// Display the bird at the position x=100 and y=245
 			this.bird = game.add.sprite(10, windowY / 2, 'bird');
 			this.bird.scale.setTo(0.1, 0.1);
+			// let fly = this.bird.animations.add('fly');
+			// this.bird.animations.play('fly', 3 ,true);
+
 			// Add physics to the bird
 			// Needed for: movements, gravity, collisions, etc.
 			game.physics.arcade.enable(this.bird);
@@ -63,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		update: function () {
 			// This function is called 60 times per second    
-			// It contains the game's logic   
-			if (this.bird.y < 0 )
+			// It contains the game's logic
+			if (this.bird.y < 0)
 				this.restartGame();
 			game.physics.arcade.overlap(
 				this.bird, this.food, this.eatFood, null, this);
@@ -118,8 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			game.physics.arcade.enable(goodbug);
 
 			// Add velocity to the pipe to make it move left
-			goodbug.body.velocity.x = -200;
-
+			//goodbug.body.velocity.x = -200;
+			goodbug.body.velocity.x = -2 * screen_velocity;
 			// Automatically kill the pipe when it's no longer visible 
 			goodbug.checkWorldBounds = true;
 			goodbug.outOfBoundsKill = true;
@@ -139,6 +141,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		eatFood: function (bird, goodbug) {
 			this.score += 1;
+			totalScore += 1;
+			console.log(totalScore);
 			this.labelScore.text = this.score;
 			goodbug.destroy();
 		},
@@ -159,22 +163,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Start the state to actually start the game
 	game.state.start('main');
 
-	// let canvas = document.getElementById('circles');
-	// let c = canvas.getContext('2d');
-
-	// for(let i =0; i < 50; i++){
-	// 	let x = Math.random() * window.innerWidth;
-	// 	let y = Math.random() * window.innerHeight;
-	// 	c.beginPath(); 
-	// 	c.arc(x, y, 30, 0, Math.PI * 2, false);
-	// 	c.strokeStyle = 'blue';
-	// 	c.stroke();
-	// }
+	
+	
 
 
 	// Create a new instance of an audio object and adjust some of its properties
 	let audio = document.getElementById('audio_box');
-
+	audio.src = window.location.search.split("=")[1];
 	// Establish all variables that your Analyser will use
 	let canvas, ctx, source, context, analyser, fbc_array, bars, bar_x, bar_y, bar_width, bar_height;
 	// Initialize the MP3 player after the page loads all of its HTML into the window
@@ -189,6 +184,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		source = context.createMediaElementSource(audio);
 		source.connect(analyser);
 		analyser.connect(context.destination);
+		audio.onended = function() {
+			window.open(`page4.html?score=${totalScore}`);
+		};
 		frameLooper();
 	}
 	// frameLooper() animates any style of graphics you wish to the audio frequency
@@ -199,16 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		analyser.getByteFrequencyData(fbc_array);
 		ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
 		ctx.fillStyle = '#00CCFF'; // Color of the bars
+		screen_velocity = fbc_array[0];
 		bars = 50;
 		for (let i = 0; i < bars; i++) {
 			bar_x = i * 30;
 			bar_width = 25;
 			bar_height = -(fbc_array[i] / 1.25);
 			bar_y = canvas.height;
-			// else if (i > 2) {
-			// 	bar_height = (fbc_array[i - 2] / 1.25);
-			// 	bar_y = 0;
-			// }
+			
 			//fillRect(x, y, width, height) // Explanation of the parameters below
 			ctx.fillRect(bar_x, bar_y, bar_width, bar_height);
 

@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+    let scr = document.getElementById('totalScore');
+    scr.textContent= window.location.search.split("=")[1];
+    console.log('hello');
     let homePageBtn = document.getElementById('homePageBtn');
     homePageBtn.textContent = 'HOME';
     homePageBtn.addEventListener('click', (ev) => {
@@ -35,5 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         delay: 1100,
         duration: 1000,
     })
+
+    
 
 })

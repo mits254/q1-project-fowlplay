@@ -3,6 +3,30 @@ html, body {
     padding: 0;
     margin: 0;
 }
+#flappybird {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    z-index: -3;
+    margin-top: 0;
+ }
+ 
+ #flappybird2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: -2;
+    margin-top: 0;
+ }
+ 
+ #flappybird3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    left: 10px;
+    top: 5px;
+ }
 
 body {
     background:rgba(255,255,255,0.5);
@@ -56,29 +80,56 @@ body {
 }
 
 .song6 {
-    background-color: rgb(107, 221, 221);
+    background-color: rgb(55, 116, 116, 0.116);
     float: left
 }
 
 .song7 {
-    background-color: rgb(107, 221, 221);
+    background-color: rgb(79, 163, 163, 0.247);
     float: left
 }
 
 .song8 {
-    background-color: rgb(107, 221, 221);
+    background-color: rgb(81, 170, 170, 0.603);
     float: left
 }
 
 .song9 {
-    background-color: rgb(107, 221, 221);
+    background-color: rgb(96, 201, 201, 0.76);
     float: left
 }
 
 .song10 {
-    background-color: rgb(107, 221, 221);
+    background-color:  rgb(117, 238, 238);
     float: left
 }
+#instructions {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+ }
+ ul {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    padding: 38px;
+ }
+ 
+ li {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 9px;
+    vertical-align: middle;
+    line-height: 10px;
+ }
 
 #playSong {
     font-family: 'Love Ya Like A Sister', cursive;
@@ -107,7 +158,18 @@ body {
     border-radius: 180px;
     float: right;
 }
-
+.chooseSong {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: lightblue dotted;
+    border-radius: 100px;
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 14px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+ }
 
 
 
