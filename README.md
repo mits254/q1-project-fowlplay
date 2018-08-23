@@ -12,8 +12,10 @@ To play this game click on the link below and follow the instructions.
 
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
-<video width = "400" height = "300" controls > <source src="assets/FowlPlayClip.mp4" type="video/mp4">
-</video>
+<img src="assets/ezgif.com-optimize.gif"/>
+
+<!-- <video width = "400" height = "300" controls > <source src="assets/FowlPlayClip.mp4" type="video/mp4">
+</video> -->
  <!-- <script  src="assets/FowlPlayClip.mp4"></script> -->
 
 ### BEST FEATURE

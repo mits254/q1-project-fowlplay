@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let X = window.innerWidth;
 	let Y = window.innerHeight;
-    console.log(X,Y);
 	let windowX = Math.ceil(X / 1.5);
 	let windowY = Math.ceil(Y / 1.5) - 30;
 	let gm = document.getElementById('analyser_render');
@@ -32,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			// Display the bird at the position x=100 and y=245
 			this.bird = game.add.sprite(10, windowY / 2, 'bird');
 			this.bird.scale.setTo(0.1, 0.1);
-			// let fly = this.bird.animations.add('fly');
-			// this.bird.animations.play('fly', 3 ,true);
 
 			// Add physics to the bird
 			// Needed for: movements, gravity, collisions, etc.
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			game.physics.arcade.enable(goodbug);
 
 			// Add velocity to the pipe to make it move left
-			//goodbug.body.velocity.x = -200;
 			goodbug.body.velocity.x = -2 * screen_velocity;
 			// Automatically kill the pipe when it's no longer visible 
 			goodbug.checkWorldBounds = true;
