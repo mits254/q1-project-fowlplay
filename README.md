@@ -8,6 +8,8 @@ An interactive game with an Audio Visualizer component.
 
 To play this game click on the link below and follow the instructions.
 
+[Fowl Play Game](http://q1project_fowlplay.surge.sh/page1.html)
+
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
 <video width = "400" height = "300" controls > <source src="assets/FowlPlay Clip.mp4" type="video/mp4">
