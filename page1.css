@@ -7,26 +7,26 @@ html, body {
     width: 200px;
     height: 200px;
     position: relative;
-    z-index: -1;
+    z-index: -3;
     margin-top: 0;
-}
-
-#flappybird2 {
+ }
+ 
+ #flappybird2 {
     width: 100px;
     height: 100px;
     position: relative;
     z-index: -2;
     margin-top: 0;
-}
-
-#flappybird3 {
+ }
+ 
+ #flappybird3 {
     position: absolute;
     width: 200px;
     height: 200px;
-    z-index: -3;
+    z-index: -1;
     left: 10px;
     top: 5px;
-}
+ }
 
 body {
     background:rgba(255,255,255,0.5);
@@ -114,10 +114,91 @@ body {
 }
 
 .song10 {
-    background-color: rgb(117, 238, 238);
-    float: left;
-    z-index: 2;
+    background-color:  rgb(117, 238, 238);
+    float: left
 }
+#instructions {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+ }
+ ul {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    padding: 38px;
+ }
+ 
+ li {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 9px;
+    vertical-align: middle;
+    line-height: 10px;
+ }
+
+#instructions {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px; 
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+}
+ul {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    padding: 38px;
+}
+
+li {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 9px;
+    vertical-align: middle;
+    line-height: 10px; 
+}
+#instructions {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 30px;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 180px;
+    background-color: dimgray;
+    box-shadow: 80;
+    border-radius: 180px;
+    float: right;
+ }
+ ul {
+    line-height: 25px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+    padding: 38px;
+ }
+ 
+ li {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-size: 9px;
+    vertical-align: middle;
+    line-height: 10px;
+ }
 
 #instructions {
     font-family: 'Love Ya Like A Sister', cursive;

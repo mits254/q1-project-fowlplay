@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', (ev) => {
-
     let selected;
     let basicTimeline = anime.timeline();
     basicTimeline
@@ -22,14 +21,12 @@ document.addEventListener('DOMContentLoaded', (ev) => {
             duration: 3000,
             easing: 'easeInOutQuad',
         });
-
     function hideChooseSong() {
         anime({
             targets: '.chooseSong',
             opacity: 0,
         })
     };
-
     let song1 = document.getElementsByClassName('song1')[0];
     song1.innerText = 'Wrecking Ball';
     song1.addEventListener('click', (ev) => {
@@ -44,7 +41,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song2 = document.getElementsByClassName('song2')[0];
     song2.innerText = 'She Wolf';
     song2.addEventListener('click', (ev) => {
@@ -58,7 +54,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song3 = document.getElementsByClassName('song3')[0];
     song3.innerText = 'The Monster';
     song3.addEventListener('click', (ev) => {
@@ -72,7 +67,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song4 = document.getElementsByClassName('song4')[0];
     song4.innerText = 'Lean On';
     song4.addEventListener('click', (ev) => {
@@ -86,7 +80,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song5 = document.getElementsByClassName('song5')[0];
     song5.innerText = 'Young Blood';
     song5.addEventListener('click', (ev) => {
@@ -100,7 +93,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song6 = document.getElementsByClassName('song6')[0];
     song6.innerText = 'Work From Home';
     song6.addEventListener('click', (ev) => {
@@ -114,7 +106,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song7 = document.getElementsByClassName('song7')[0];
     song7.innerText = `Don't Let Me Down`;
     song7.addEventListener('click', (ev) => {
@@ -128,7 +119,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song8 = document.getElementsByClassName('song8')[0];
     song8.innerText = 'Chandelier';
     song8.addEventListener('click', (ev) => {
@@ -142,7 +132,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song9 = document.getElementsByClassName('song9')[0];
     song9.innerText = 'Head Full of Dreams';
     song9.addEventListener('click', (ev) => {
@@ -156,7 +145,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let song10 = document.getElementsByClassName('song10')[0];
     song10.innerText = '1989';
     song10.addEventListener('click', (ev) => {
@@ -170,7 +158,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         })
         hideChooseSong();
     })
-
     let animateTitle = anime({
         targets: 'h1',
         translateY: '17rem',
@@ -181,7 +168,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         delay: 200,
         duration: 1000
     })
-
     let animateChooseSong = anime({
         targets: '.chooseSong',
         translateY: '19rem',
@@ -191,7 +177,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         delay: 100,
         duration: 1000
     })
-
     let animateSong1 = anime({
         targets: '.song1',
         translateX: '15rem',
@@ -204,7 +189,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong2 = anime({
         targets: '.song2',
         translateX: '20rem',
@@ -217,7 +201,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong3 = anime({
         targets: '.song3',
         translateX: '25rem',
@@ -230,7 +213,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong4 = anime({
         targets: '.song4',
         translateX: '30rem',
@@ -243,7 +225,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong5 = anime({
         targets: '.song5',
         translateX: '33rem',
@@ -256,7 +237,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong6 = anime({
         targets: '.song6',
         translateX: '25rem',
@@ -269,7 +249,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong7 = anime({
         targets: '.song7',
         translateX: '9rem',
@@ -282,7 +261,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong8 = anime({
         targets: '.song8',
         translateX: '-10rem',
@@ -295,7 +273,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong9 = anime({
         targets: '.song9',
         translateX: '-28rem',
@@ -308,7 +285,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateSong10 = anime({
         targets: '.song10',
         translateX: '-45rem',
@@ -321,7 +297,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         loop: false,
         duration: 1000
     })
-
     let animateInstructions = anime({
         targets: '#instructions',
         translateY: '10rem',
@@ -330,7 +305,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         delay: 1100,
         duration: 1000,
     })
-
     let animatePlaySong = anime({
         targets: '#playSong',
         translateY: '25rem',
@@ -339,7 +313,6 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         delay: 1100,
         duration: 1000,
     })
-
     let animatePlayGame = anime({
         targets: '#playGame',
         translateY: '30rem',
@@ -348,27 +321,21 @@ document.addEventListener('DOMContentLoaded', (ev) => {
         delay: 1100,
         duration: 1000,
     })
-
     let instructions = document.getElementById('instructions');
     instructions.addEventListener('click', (ev) => {
         instructions.innerText = '';
-
         let instructionList = document.createElement('ul');
         instructionList.innerText = 'INSTRUCTIONS:'
         instructions.appendChild(instructionList);
-
         let liOne = document.createElement('li');
         instructionList.appendChild(liOne);
         liOne.innerText = "Use the spacebar to fly."
-
         let liTwo = document.createElement('li');
         instructionList.appendChild(liTwo);
         liTwo.innerText = "Collect the pink bugs for your babies."
-
         let liThree = document.createElement('li');
         instructionList.appendChild(liThree);
         liThree.innerText = "Be aware of the poisonous yellow bugs - they will kill you."
-
         anime({
             targets: '.chooseSong',
             opacity: 0,
@@ -387,19 +354,13 @@ document.addEventListener('DOMContentLoaded', (ev) => {
             translateY: '5rem',
             translateX: '-10rem',
         })
-
     })
-
     let playSong = document.getElementById('playSong');
     playSong.addEventListener('click', (ev) => {
         window.open(`page3.html?song=${selected}`);
     })
-
     let playGame = document.getElementById('playGame');
     playGame.addEventListener('click', (ev) => {
         window.open(`page2.html?song=${selected}`);
     })
 })
-
-
-
