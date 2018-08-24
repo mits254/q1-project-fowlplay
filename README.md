@@ -18,7 +18,7 @@ To play this game click on the link below and follow the instructions. Make sure
 
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
-<img src="assets/ezgif.com-optimize.gif"/>
+<img src="assets/vid2.gif"/>
 
 ### BEST FEATURE
 
