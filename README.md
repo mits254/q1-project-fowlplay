@@ -6,7 +6,7 @@ An interactive game with an Audio Visualizer component. Score accumulates for th
 
 ## GETTING STARTED
 
-To play this game click on the link below and follow the instructions.
+To play this game click on the link below and follow the instructions.  Make sure your pop-up blocker is disabled.
 
 [Fowl Play Game](http://q1project_fowlplay.surge.sh/page1.html)
 
@@ -14,6 +14,7 @@ To play this game click on the link below and follow the instructions.
 * Fork and Clone this repository.
 * Run `python -m SimpleHTTPServer` command into the source folder.
 * Open browser at localhost:8000/page1.html
+* Make sure your pop-up blocker is disabled.
 
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
