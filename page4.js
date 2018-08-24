@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let scr = document.getElementById('totalScore');
-    scr.textContent= window.location.search.split("=")[1];
+    scr.textContent = window.location.search.split('=')[1];
+    
     let homePageBtn = document.getElementById('homePageBtn');
     homePageBtn.textContent = 'HOME';
     homePageBtn.addEventListener('click', (ev) => {
