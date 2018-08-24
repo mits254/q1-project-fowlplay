@@ -1,19 +1,20 @@
 # Fowl Play Game
 
-An interactive game with an Audio Visualizer component. Score accumulates for the entire song with unlimited lives
+An interactive game with an Audio Visualizer component. Score accumulates for the entire song with unlimited lives period.
 
 <img src="assets/Screen Shot 2018-08-23 at 11.06.15 AM.png" />
 
 ## GETTING STARTED
 
-To play this game click on the link below and follow the instructions.
+To play this game click on the link below and follow the instructions. Make sure your pop-up blocker is disabled.
 
 [Fowl Play Game](http://q1project_fowlplay.surge.sh/page1.html)
 
 #### OPTION :
 * Fork and Clone this repository.
 * Run `python -m SimpleHTTPServer` command into the source folder.
-* Open brower at localhost:8000/page1.html
+* Open browser at localhost:8000/page1.html
+* Make sure your pop-up blocker is disabled.
 
 <img src="assets/Screen Shot 2018-08-23 at 11.07.17 AM.png" />
 
